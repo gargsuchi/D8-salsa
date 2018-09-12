@@ -1,0 +1,5 @@
+name: 'Govind Excercixe2'
+type: module
+description: 'Custom config form.'
+core: 8.x
+package: 'Custom'
