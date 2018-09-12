@@ -1,0 +1,10 @@
+govind_exercise2.config_from:
+  path: '/govind_exercise2/config'
+  defaults:
+    _form: '\Drupal\govind_exercise2\Form\ConfigFrom'
+    _title: 'ConfigFrom'
+  requirements:
+    _permission: 'administer content'
+  options:
+    _admin_route: TRUE
+

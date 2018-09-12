@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains govind_exercise2.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function govind_exercise2_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the govind_exercise2 module.
+    case 'help.page.govind_exercise2':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom config form.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
