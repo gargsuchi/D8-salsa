@@ -1,0 +1,14 @@
+uuid: 0657fdfc-6ae2-4947-abe5-60b62b80cc13
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - govind.maloo@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
