@@ -1,0 +1,14 @@
+uuid: beb8b215-1cb0-414c-bb3f-f7ae237af83a
+name: 'D8 Salsa'
+mail: govind.maloo@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
