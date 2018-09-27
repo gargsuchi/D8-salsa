@@ -1,0 +1,5 @@
+name: 'Stock API'
+type: module
+description: 'Stock API integration'
+core: 8.x
+package: 'Custom'

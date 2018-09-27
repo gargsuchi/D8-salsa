@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * @file
+ * Contains stock_api.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function stock_api_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the stock_api module.
+    case 'help.page.stock_api':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Stock API integration') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_cron().
+ */
+function stock_api_cron() {
+  $values = [
+    'type' => 'stock_exchange_rate_card',
+  ];
+  $custom_blocks = \Drupal::entityTypeManager()->getStorage('block_content')->loadByProperties($values);
+  if (count($custom_blocks) > 0) {
+    $client = \Drupal::httpClient();
+    foreach ($custom_blocks as $key => $block) {
+      $symbol = $block->field_symbol->value;
+
+      // API request.
+      $url = 'http://dev.markitondemand.com/MODApis/Api/v2/Quote/json?symbol=' . $symbol;
+      try {
+        $response = $client->get($url);
+        $data = json_decode($response->getBody());
+        if ($data->Status == "SUCCESS") {
+          $block->set('field_change', $data->Change);
+          $block->set('field_last_price', $data->LastPrice);
+          $block->save();
+        }
+      }
+      catch (RequestException $e) {
+        watchdog_exception('stock_api', $e->getMessage());
+      }
+    }
+  }
+}
