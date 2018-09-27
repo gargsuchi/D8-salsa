@@ -1,0 +1,25 @@
+uuid: a6636a18-0a31-4eb0-8828-e938afa710c6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:stock_exchange_rate_card:253408ae-ee77-426d-af5b-872ef4cb1e1a'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: freeportfcx
+theme: bartik
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: 'block_content:253408ae-ee77-426d-af5b-872ef4cb1e1a'
+settings:
+  id: 'block_content:253408ae-ee77-426d-af5b-872ef4cb1e1a'
+  label: 'Freeport, FCX'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

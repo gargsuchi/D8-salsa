@@ -1,0 +1,25 @@
+uuid: 48b42c42-fdb3-493f-9b8c-707aebff7a5c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:stock_exchange_rate_card:7550cd8b-0ba5-4136-b26b-05ab88749412'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: transoceanrig
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:7550cd8b-0ba5-4136-b26b-05ab88749412'
+settings:
+  id: 'block_content:7550cd8b-0ba5-4136-b26b-05ab88749412'
+  label: 'Transocean, RIG'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

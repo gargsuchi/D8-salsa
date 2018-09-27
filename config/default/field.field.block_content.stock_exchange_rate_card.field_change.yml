@@ -1,0 +1,23 @@
+uuid: 1edc986d-b57c-409f-aa1a-0e163bae0eae
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.stock_exchange_rate_card
+    - field.storage.block_content.field_change
+id: block_content.stock_exchange_rate_card.field_change
+field_name: field_change
+entity_type: block_content
+bundle: stock_exchange_rate_card
+label: Change
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal
