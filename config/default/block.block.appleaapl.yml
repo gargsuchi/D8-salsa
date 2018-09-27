@@ -1,0 +1,25 @@
+uuid: 254a01a0-099b-4267-9655-882fcf68c2cd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:stock_exchange_rate_card:f442d599-9920-4bed-ab8a-d63629a4dbbf'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: appleaapl
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:f442d599-9920-4bed-ab8a-d63629a4dbbf'
+settings:
+  id: 'block_content:f442d599-9920-4bed-ab8a-d63629a4dbbf'
+  label: 'Apple, AAPL'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

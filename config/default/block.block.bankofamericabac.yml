@@ -1,0 +1,25 @@
+uuid: 95d9ab29-1af3-4bb2-bdc8-0f4d532c0297
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:stock_exchange_rate_card:edb9d9ba-268e-4d31-b4aa-a14bbec46e9b'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: bankofamericabac
+theme: bartik
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:edb9d9ba-268e-4d31-b4aa-a14bbec46e9b'
+settings:
+  id: 'block_content:edb9d9ba-268e-4d31-b4aa-a14bbec46e9b'
+  label: 'Bank of America,BAC'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
