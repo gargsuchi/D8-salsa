@@ -1,0 +1,8 @@
+
+page_logger.page_logger_controller_logger:
+  path: '/salsa/d8ex/logger'
+  defaults:
+    _controller: '\Drupal\page_logger\Controller\PageLoggerController::logger'
+    _title: 'log'
+  requirements:
+    _permission: 'access content'
