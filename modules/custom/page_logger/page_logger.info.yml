@@ -1,0 +1,5 @@
+name: 'page_logger'
+type: module
+description: 'Page view log'
+core: 8.x
+package: 'Custom'
